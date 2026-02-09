@@ -12,13 +12,13 @@ Entity:
 
 Tables needed:
 
-- Customer
-- Employee
-- Invoice
-- Album
-- Artist
-- Track
-- InvoiceLine
+~~- Customer~~
+~~- Employee~~
+~~- Invoice~~
+- ~~Album~~
+- ~~Artist~~
+~~- Track~~
+~~- InvoiceLine~~
 
 
 - Lombok 
