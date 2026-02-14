@@ -1,0 +1,15 @@
+<div class="login-form">
+    <h1>Login</h1>
+
+    <input type="text" id="username" placeholder="Enter Your Username" [(ngModel)]="username" />
+    <input type="password" id="password" placeholder="Enter Your Password" [(ngModel)]="password" /> 
+    <button (click)="validateLogin()">Submit</button>
+
+
+    @if(failedLoginMessage()){
+        <div class="error-message">
+            <p>{{failedLoginMessage()}}</p>
+        </div>
+    }
+
+</div>

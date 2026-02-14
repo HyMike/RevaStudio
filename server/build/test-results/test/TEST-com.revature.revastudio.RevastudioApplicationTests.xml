@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.revature.revastudio.RevastudioApplicationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-02-09T05:14:44.772Z" hostname="Michaels-MacBook-Pro-3.local" time="0.242">
+<testsuite name="com.revature.revastudio.RevastudioApplicationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-02-13T23:05:45.369Z" hostname="Michaels-MacBook-Pro-3.local" time="0.25">
   <properties/>
-  <testcase name="contextLoads()" classname="com.revature.revastudio.RevastudioApplicationTests" time="0.242"/>
-  <system-out><![CDATA[21:14:39.774 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.revature.revastudio.RevastudioApplicationTests]: RevastudioApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-21:14:39.813 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.revature.revastudio.RevastudioApplication for test class com.revature.revastudio.RevastudioApplicationTests
+  <testcase name="contextLoads()" classname="com.revature.revastudio.RevastudioApplicationTests" time="0.25"/>
+  <system-out><![CDATA[15:05:40.192 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.revature.revastudio.RevastudioApplicationTests]: RevastudioApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+15:05:40.233 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.revature.revastudio.RevastudioApplication for test class com.revature.revastudio.RevastudioApplicationTests
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -14,18 +14,18 @@
 
  :: Spring Boot ::                (v4.0.2)
 
-2026-02-08T21:14:39.955-08:00  INFO 81331 --- [revastudio] [    Test worker] c.r.r.RevastudioApplicationTests         : Starting RevastudioApplicationTests using Java 21.0.9 with PID 81331 (started by mike in /Users/mike/Desktop/Software Engineer Projects/Revastudio/RevaStudio/server)
-2026-02-08T21:14:39.956-08:00  INFO 81331 --- [revastudio] [    Test worker] c.r.r.RevastudioApplicationTests         : The following 1 profile is active: "rds"
-2026-02-08T21:14:40.153-08:00  INFO 81331 --- [revastudio] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2026-02-08T21:14:40.177-08:00  INFO 81331 --- [revastudio] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 20 ms. Found 8 JPA repository interfaces.
-2026-02-08T21:14:40.309-08:00  INFO 81331 --- [revastudio] [    Test worker] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
-2026-02-08T21:14:40.334-08:00  INFO 81331 --- [revastudio] [    Test worker] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.1.Final
-2026-02-08T21:14:40.494-08:00  INFO 81331 --- [revastudio] [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2026-02-08T21:14:40.507-08:00  INFO 81331 --- [revastudio] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2026-02-08T21:14:41.412-08:00  INFO 81331 --- [revastudio] [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@664254b6
-2026-02-08T21:14:41.413-08:00  INFO 81331 --- [revastudio] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2026-02-08T21:14:41.508-08:00  WARN 81331 --- [revastudio] [    Test worker] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2026-02-08T21:14:41.785-08:00  INFO 81331 --- [revastudio] [    Test worker] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+2026-02-13T15:05:40.370-08:00  INFO 66867 --- [revastudio] [    Test worker] c.r.r.RevastudioApplicationTests         : Starting RevastudioApplicationTests using Java 21.0.9 with PID 66867 (started by mike in /Users/mike/Desktop/Software Engineer Projects/Revastudio/RevaStudio/server)
+2026-02-13T15:05:40.370-08:00  INFO 66867 --- [revastudio] [    Test worker] c.r.r.RevastudioApplicationTests         : The following 1 profile is active: "rds"
+2026-02-13T15:05:40.594-08:00  INFO 66867 --- [revastudio] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-13T15:05:40.621-08:00  INFO 66867 --- [revastudio] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 23 ms. Found 8 JPA repository interfaces.
+2026-02-13T15:05:40.788-08:00  INFO 66867 --- [revastudio] [    Test worker] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-02-13T15:05:40.808-08:00  INFO 66867 --- [revastudio] [    Test worker] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.1.Final
+2026-02-13T15:05:40.966-08:00  INFO 66867 --- [revastudio] [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-13T15:05:40.979-08:00  INFO 66867 --- [revastudio] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-02-13T15:05:41.867-08:00  INFO 66867 --- [revastudio] [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@41289e88
+2026-02-13T15:05:41.868-08:00  INFO 66867 --- [revastudio] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-02-13T15:05:41.959-08:00  WARN 66867 --- [revastudio] [    Test worker] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-02-13T15:05:42.258-08:00  INFO 66867 --- [revastudio] [    Test worker] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
 	Database JDBC URL [jdbc:postgresql://revastudio-db.cfwi4y0qg2wj.us-east-2.rds.amazonaws.com:5432/postgres]
 	Database driver: PostgreSQL JDBC Driver
 	Database dialect: PostgreSQLDialect
@@ -37,7 +37,7 @@
 	Pool: DataSourceConnectionProvider
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2026-02-08T21:14:42.196-08:00  INFO 81331 --- [revastudio] [    Test worker] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-13T15:05:42.709-08:00  INFO 66867 --- [revastudio] [    Test worker] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
 Hibernate: 
     set client_min_messages = WARNING
 Hibernate: 
@@ -181,10 +181,17 @@ Hibernate:
        add constraint FKfndbe67uw6silwqnlyudtwqmo 
        foreign key (employee_id) 
        references employee
-2026-02-08T21:14:44.455-08:00  INFO 81331 --- [revastudio] [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2026-02-08T21:14:44.506-08:00  INFO 81331 --- [revastudio] [    Test worker] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
-2026-02-08T21:14:44.600-08:00  WARN 81331 --- [revastudio] [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2026-02-08T21:14:44.766-08:00  INFO 81331 --- [revastudio] [    Test worker] c.r.r.RevastudioApplicationTests         : Started RevastudioApplicationTests in 4.898 seconds (process running for 5.36)
+2026-02-13T15:05:44.963-08:00  INFO 66867 --- [revastudio] [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-13T15:05:45.017-08:00  INFO 66867 --- [revastudio] [    Test worker] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-02-13T15:05:45.110-08:00  WARN 66867 --- [revastudio] [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-13T15:05:45.155-08:00  WARN 66867 --- [revastudio] [    Test worker] .s.a.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 7612f90d-491f-420e-be84-71369e0c65b5
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-02-13T15:05:45.158-08:00  INFO 66867 --- [revastudio] [    Test worker] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-02-13T15:05:45.363-08:00  INFO 66867 --- [revastudio] [    Test worker] c.r.r.RevastudioApplicationTests         : Started RevastudioApplicationTests in 5.082 seconds (process running for 5.546)
 ]]></system-out>
   <system-err><![CDATA[Mockito is currently self-attaching to enable the inline-mock-maker. This will no longer work in future releases of the JDK. Please add Mockito as an agent to your build as described in Mockito's documentation: https://javadoc.io/doc/org.mockito/mockito-core/latest/org.mockito/org/mockito/Mockito.html#0.3
 WARNING: A Java agent has been loaded dynamically (/Users/mike/.gradle/caches/modules-2/files-2.1/net.bytebuddy/byte-buddy-agent/1.17.8/f09415827a71be7ed621c7bd02550678f28bc81c/byte-buddy-agent-1.17.8.jar)
