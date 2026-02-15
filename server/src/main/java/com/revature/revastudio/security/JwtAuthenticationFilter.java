@@ -34,7 +34,7 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
 
 
         String authHeader = request.getHeader("Authorization");
-
+        System.out.println("Authorization header: " + (authHeader != null ? authHeader.substring(0, Math.min(30, authHeader.length())) + "..." : "NULL"));
         if (authHeader == null || !authHeader.startsWith("Bearer ")){
             filterChain.doFilter(request, response);
             return;
@@ -47,7 +47,7 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
             Role userRole = jwtUtil.extractRole(token);
 
             List<SimpleGrantedAuthority> authorities = Collections.singletonList(
-                new SimpleGrantedAuthority("Role_" + userRole.name())
+                new SimpleGrantedAuthority("ROLE_" + userRole.name())
             );
 
 
@@ -62,7 +62,7 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
             SecurityContextHolder.getContext().setAuthentication(authentication);
 
         } catch (Exception e){
-
+            e.printStackTrace();
         }
         filterChain.doFilter(request,response);
 
