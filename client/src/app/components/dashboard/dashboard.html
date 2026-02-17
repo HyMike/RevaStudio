@@ -1,1 +1,32 @@
-<p>dashboard works!</p>
+<div class="dashboard">
+  <div class="dashboard-card">
+    <h1>My Purchased Tracks</h1>
+
+    @if (allTracks$ | async; as tracks) {
+      @if (tracks.length > 0) {
+        <table>
+          <thead>
+            <tr>
+              <th>Track</th>
+              <th>Artist</th>
+              <th>Album</th>
+            </tr>
+          </thead>
+          <tbody>
+            @for (track of tracks; track $index) {
+              <tr>
+                <td>{{ track.track }}</td>
+                <td>{{ track.artist }}</td>
+                <td>{{ track.albums }}</td>
+              </tr>
+            }
+          </tbody>
+        </table>
+      } @else {
+        <p class="empty-message">Please purchase tracks to view them here.</p>
+      }
+    } @else {
+      <p class="loading-message">Loading...</p>
+    }
+  </div>
+</div>

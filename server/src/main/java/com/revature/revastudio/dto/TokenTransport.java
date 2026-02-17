@@ -6,7 +6,5 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 public class TokenTransport {
-
-    public String Token;
-
+    public String token;
 }
