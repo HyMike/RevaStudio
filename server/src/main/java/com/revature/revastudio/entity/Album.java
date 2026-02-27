@@ -7,7 +7,6 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import java.util.List;
-import java.util.UUID;
 
 @AllArgsConstructor
 @NoArgsConstructor
@@ -17,15 +16,15 @@ import java.util.UUID;
 public class Album {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.UUID)
-    @Column(name="id", nullable=false, updatable=false)
-    private UUID id;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "album_id", nullable = false, updatable = false)
+    private Integer albumId;
 
     @Column(nullable = false)
     private String title;
 
     @ManyToOne
-    @JoinColumn(name="artist_id")
+    @JoinColumn(name = "artist_id", nullable = false)
     private Artist artist;
 
     @OneToMany(mappedBy = "album")

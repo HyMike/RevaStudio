@@ -3,8 +3,10 @@ import { LoginPage } from './components/login-page/login-page';
 import { Dashboard } from './components/dashboard/dashboard';
 import { authGuard } from './guards/auth-guard';
 import { guestGuard } from './guards/guest-guard';
+import { Ticket } from './components/ticket/ticket';
 
 export const routes: Routes = [
     {path: 'login', component: LoginPage, canActivate: [guestGuard]},
-    {path: 'dashboard', component: Dashboard, canActivate: [authGuard]}
+    {path: 'dashboard', component: Dashboard, canActivate: [authGuard]},
+    {path: 'ticket', component: Ticket, canActivate: [authGuard]}
 ];

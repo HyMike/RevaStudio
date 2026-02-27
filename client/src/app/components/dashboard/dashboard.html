@@ -1,7 +1,14 @@
 <div class="dashboard">
-  <div class="dashboard-card">
-    <h1>My Purchased Tracks</h1>
+  <div class="card-header">
 
+    <h1>My Purchased Tracks</h1>
+      <div class="card-actions">
+        <button (click)="logout()">logout</button>
+        <button (click)="createTicket()">create ticket</button>
+      </div>
+    </div>
+
+   
     @if (allTracks$ | async; as tracks) {
       @if (tracks.length > 0) {
         <table>
@@ -28,5 +35,30 @@
     } @else {
       <p class="loading-message">Loading...</p>
     }
-  </div>
+  <!-- </div> -->
+
+  @if(showCreateTicketModal) {
+    <div class="modal-backdrop" (click)="closeTicketModal()"></div>
+    <div class="modal-box" role="dialog">
+      <h2>Create Ticket</h2>
+      <!-- <form (ngSubmit)="onSubmitTicket()" #ticketForm="ngForm"> -->
+        @if(submitTriggerResult$ | async) {}
+      <form (ngSubmit)="onSubmitTicket()" #ticketForm="ngForm">
+        <label>Subject</label>
+        <input type="text" name="subject" [(ngModel)]="ticketSubject" required />
+        <label>Issue</label> 
+        <textarea type="text" name="body" [(ngModel)]="ticketBody" required></textarea> 
+        <div class="modal-action">
+          <button type="button" (click)="closeTicketModal()">Cancel</button>
+          <button type="submit" [disabled]="ticketForm.invalid">Submit</button>
+        </div>
+
+        </form>
+
+
+    </div>
+
+  }
+
+
 </div>

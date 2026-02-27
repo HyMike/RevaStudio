@@ -1,0 +1,11 @@
+<div> 
+    @if(allTickets | async; as tickets){
+        @for(ticket of tickets; track $index) {
+            <p>{{ ticket.subject }}</p>
+            
+        }
+
+        
+    }
+
+</div>

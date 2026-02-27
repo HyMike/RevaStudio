@@ -6,10 +6,9 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-import java.util.UUID;
 
+import java.util.List;
 import java.util.Set;
-
 
 @AllArgsConstructor
 @NoArgsConstructor
@@ -19,20 +18,20 @@ import java.util.Set;
 public class Customer {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.UUID)
-    @Column(name="id", nullable=false, updatable=false)
-    private UUID id;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "customer_id", nullable = false, updatable = false)
+    private Integer customerId;
 
-    @Column(nullable = false)
-    @Size(min = 1, max = 20)
+    @Column(name = "first_name", nullable = false)
+    @Size(min = 1, max = 40)
     private String firstName;
 
-    @Column(nullable = false)
+    @Column(name = "last_name", nullable = false)
     @Size(min = 1, max = 20)
     private String lastName;
 
     @ManyToOne
-    @JoinColumn(name="client")
+    @JoinColumn(name = "support_rep_id")
     private Employee supportRep;
 
     @OneToMany(mappedBy = "customer")
@@ -41,7 +40,9 @@ public class Customer {
     @OneToOne(mappedBy = "customer")
     private User user;
 
-    //Didn't implement the rest for mvp purpose such as address, email, phone number
+    @OneToMany(mappedBy = "customer")
+    private List<Ticket> customerTickets;
+
 
 
 }

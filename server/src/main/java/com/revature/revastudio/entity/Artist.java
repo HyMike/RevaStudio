@@ -7,19 +7,17 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import java.util.List;
-import java.util.UUID;
 
 @AllArgsConstructor
 @NoArgsConstructor
 @Getter
 @Setter
 @Entity
-
 public class Artist {
     @Id
-    @GeneratedValue(strategy = GenerationType.UUID)
-    @Column(name="id", nullable=false, updatable=false)
-    private UUID id;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "artist_id", nullable = false, updatable = false)
+    private Integer artistId;
 
     @Column(nullable = false)
     private String name;
@@ -28,4 +26,3 @@ public class Artist {
     private List<Album> albums;
 
 }
-

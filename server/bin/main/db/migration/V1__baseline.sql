@@ -1,0 +1,1 @@
+   -- Baseline: Chinook + users already exist. No schema changes.

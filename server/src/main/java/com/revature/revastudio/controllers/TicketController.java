@@ -1,0 +1,57 @@
+package com.revature.revastudio.controllers;
+
+import com.revature.revastudio.dto.TicketResponseDTO;
+import com.revature.revastudio.dto.TicketThreadDTO;
+import com.revature.revastudio.entity.TicketThread;
+import com.revature.revastudio.entity.User;
+import com.revature.revastudio.services.TicketService;
+import com.revature.revastudio.util.RetrieveCustomer;
+import com.revature.revastudio.util.RetrieveUser;
+import lombok.Getter;
+import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.prepost.PreAuthorize;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
+import java.util.UUID;
+
+@RestController
+@RequestMapping("/ticket")
+public class TicketController {
+
+    private final TicketService ticketService;
+    private final RetrieveUser retrieveUser;
+
+    public TicketController(
+            TicketService ticketService,
+            RetrieveUser retrieveUser
+
+    ) {
+        this.ticketService = ticketService;
+        this.retrieveUser = retrieveUser;
+    }
+
+
+    @PostMapping("{ticketId}/thread")
+    public ResponseEntity<TicketThreadDTO> addThreadMessages(@RequestParam Integer ticketId, @RequestBody String thread){
+         TicketThreadDTO ticketThreadDTO = this.ticketService.addThreadMessage(ticketId, thread);
+         return ResponseEntity.ok(ticketThreadDTO);
+    }
+
+
+    @PreAuthorize("hasRole('CUSTOMER')")
+    @GetMapping("tickets")
+    public ResponseEntity<List<TicketResponseDTO>> getAllTickets() {
+        UUID userId  = retrieveUser.getUser();
+        List<TicketResponseDTO> allTickets = this.ticketService.getTicketsByCustomer(userId);
+
+
+    }
+
+    //implement tickets for employee too. 
+
+
+
+}
+
+

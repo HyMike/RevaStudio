@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.revature.revastudio.RevastudioApplicationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-02-17T20:03:29.889Z" hostname="Michaels-MacBook-Pro-3.local" time="6.35">
+<testsuite name="com.revature.revastudio.RevastudioApplicationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-02-23T16:00:00.572Z" hostname="Michaels-MacBook-Pro-3.local" time="0.273">
   <properties/>
-  <testcase name="contextLoads()" classname="com.revature.revastudio.RevastudioApplicationTests" time="0.251"/>
-  <system-out><![CDATA[12:03:29.951 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.revature.revastudio.RevastudioApplicationTests]: RevastudioApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-12:03:29.997 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.revature.revastudio.RevastudioApplication for test class com.revature.revastudio.RevastudioApplicationTests
+  <testcase name="contextLoads()" classname="com.revature.revastudio.RevastudioApplicationTests" time="0.273"/>
+  <system-out><![CDATA[10:59:57.092 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.revature.revastudio.RevastudioApplicationTests]: RevastudioApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+10:59:57.157 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.revature.revastudio.RevastudioApplication for test class com.revature.revastudio.RevastudioApplicationTests
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -14,184 +14,41 @@
 
  :: Spring Boot ::                (v4.0.2)
 
-2026-02-17T12:03:30.151-08:00  INFO 88839 --- [revastudio] [    Test worker] c.r.r.RevastudioApplicationTests         : Starting RevastudioApplicationTests using Java 21.0.9 with PID 88839 (started by mike in /Users/mike/Desktop/Software Engineer Projects/Revastudio/RevaStudio/server)
-2026-02-17T12:03:30.152-08:00  INFO 88839 --- [revastudio] [    Test worker] c.r.r.RevastudioApplicationTests         : The following 1 profile is active: "rds"
-2026-02-17T12:03:30.383-08:00  INFO 88839 --- [revastudio] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2026-02-17T12:03:30.411-08:00  INFO 88839 --- [revastudio] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 24 ms. Found 8 JPA repository interfaces.
-2026-02-17T12:03:30.618-08:00  INFO 88839 --- [revastudio] [    Test worker] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
-2026-02-17T12:03:30.640-08:00  INFO 88839 --- [revastudio] [    Test worker] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.1.Final
-2026-02-17T12:03:30.816-08:00  INFO 88839 --- [revastudio] [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2026-02-17T12:03:30.830-08:00  INFO 88839 --- [revastudio] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2026-02-17T12:03:31.832-08:00  INFO 88839 --- [revastudio] [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1ddc8fc
-2026-02-17T12:03:31.834-08:00  INFO 88839 --- [revastudio] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2026-02-17T12:03:31.952-08:00  WARN 88839 --- [revastudio] [    Test worker] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2026-02-17T12:03:32.244-08:00  INFO 88839 --- [revastudio] [    Test worker] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
-	Database JDBC URL [jdbc:postgresql://revastudio-db.cfwi4y0qg2wj.us-east-2.rds.amazonaws.com:5432/postgres]
+2026-02-23T10:59:57.339-05:00  INFO 9243 --- [revastudio] [    Test worker] c.r.r.RevastudioApplicationTests         : Starting RevastudioApplicationTests using Java 21.0.9 with PID 9243 (started by mike in /Users/mike/Desktop/Software Engineer Projects/Revastudio/RevaStudio/server)
+2026-02-23T10:59:57.340-05:00  INFO 9243 --- [revastudio] [    Test worker] c.r.r.RevastudioApplicationTests         : The following 1 profile is active: "rds"
+2026-02-23T10:59:57.622-05:00  INFO 9243 --- [revastudio] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-23T10:59:57.652-05:00  INFO 9243 --- [revastudio] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 26 ms. Found 10 JPA repository interfaces.
+2026-02-23T10:59:57.886-05:00  INFO 9243 --- [revastudio] [    Test worker] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-02-23T10:59:57.907-05:00  INFO 9243 --- [revastudio] [    Test worker] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.1.Final
+2026-02-23T10:59:58.074-05:00  INFO 9243 --- [revastudio] [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-23T10:59:58.089-05:00  INFO 9243 --- [revastudio] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-02-23T10:59:58.835-05:00  INFO 9243 --- [revastudio] [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@f575d2b
+2026-02-23T10:59:58.835-05:00  INFO 9243 --- [revastudio] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-02-23T10:59:58.890-05:00  WARN 9243 --- [revastudio] [    Test worker] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-02-23T10:59:59.027-05:00  INFO 9243 --- [revastudio] [    Test worker] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://revastudio-db.cfwi4y0qg2wj.us-east-2.rds.amazonaws.com:5432/chinook]
 	Database driver: PostgreSQL JDBC Driver
 	Database dialect: PostgreSQLDialect
 	Database version: 17.6
-	Default catalog/schema: postgres/public
+	Default catalog/schema: chinook/public
 	Autocommit mode: undefined/unknown
 	Isolation level: READ_COMMITTED [default READ_COMMITTED]
 	JDBC fetch size: none
 	Pool: DataSourceConnectionProvider
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2026-02-17T12:03:32.741-08:00  INFO 88839 --- [revastudio] [    Test worker] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-Hibernate: 
-    set client_min_messages = WARNING
-Hibernate: 
-    alter table if exists album 
-       drop constraint if exists FKmwc4fyyxb6tfi0qba26gcf8s1
-Hibernate: 
-    alter table if exists customer 
-       drop constraint if exists FK3ab58nxgxxb14xpseqgrkdjsp
-Hibernate: 
-    alter table if exists invoice 
-       drop constraint if exists FK5e32ukwo9uknwhylogvta4po6
-Hibernate: 
-    alter table if exists invoice_line 
-       drop constraint if exists FKfnwks1ouvwbttl0fklxsem7ik
-Hibernate: 
-    alter table if exists invoice_line 
-       drop constraint if exists FKaqmo5d61p64fh1d54imieqi8i
-Hibernate: 
-    alter table if exists track 
-       drop constraint if exists FKaxm9pbgk7ptorfyk3o6911q05
-Hibernate: 
-    alter table if exists users 
-       drop constraint if exists FKj1nvw1u6pgkabmhbcqkvatr8s
-Hibernate: 
-    alter table if exists users 
-       drop constraint if exists FKfndbe67uw6silwqnlyudtwqmo
-Hibernate: 
-    drop table if exists album cascade
-Hibernate: 
-    drop table if exists artist cascade
-Hibernate: 
-    drop table if exists customer cascade
-Hibernate: 
-    drop table if exists employee cascade
-Hibernate: 
-    drop table if exists invoice cascade
-Hibernate: 
-    drop table if exists invoice_line cascade
-Hibernate: 
-    drop table if exists track cascade
-Hibernate: 
-    drop table if exists users cascade
-Hibernate: 
-    create table album (
-        artist_id uuid,
-        id uuid not null,
-        title varchar(255) not null,
-        primary key (id)
-    )
-Hibernate: 
-    create table artist (
-        id uuid not null,
-        name varchar(255) not null,
-        primary key (id)
-    )
-Hibernate: 
-    create table customer (
-        client uuid,
-        id uuid not null,
-        first_name varchar(20) not null,
-        last_name varchar(20) not null,
-        primary key (id)
-    )
-Hibernate: 
-    create table employee (
-        id uuid not null,
-        first_name varchar(20) not null,
-        last_name varchar(20) not null,
-        title varchar(255) not null,
-        primary key (id)
-    )
-Hibernate: 
-    create table invoice (
-        total float(53) not null,
-        invoice_date timestamp(6) not null,
-        customer_id uuid,
-        id uuid not null,
-        primary key (id)
-    )
-Hibernate: 
-    create table invoice_line (
-        id uuid not null,
-        invoice_id uuid,
-        track_id uuid,
-        primary key (id)
-    )
-Hibernate: 
-    create table track (
-        album_id uuid,
-        id uuid not null,
-        name varchar(255) not null,
-        primary key (id)
-    )
-Hibernate: 
-    create table users (
-        customer_id uuid unique,
-        employee_id uuid unique,
-        id uuid not null,
-        password varchar(20) not null,
-        username varchar(20) not null,
-        role varchar(255) not null check ((role in ('CUSTOMER','EMPLOYEE'))),
-        primary key (id)
-    )
-Hibernate: 
-    alter table if exists album 
-       add constraint FKmwc4fyyxb6tfi0qba26gcf8s1 
-       foreign key (artist_id) 
-       references artist
-Hibernate: 
-    alter table if exists customer 
-       add constraint FK3ab58nxgxxb14xpseqgrkdjsp 
-       foreign key (client) 
-       references employee
-Hibernate: 
-    alter table if exists invoice 
-       add constraint FK5e32ukwo9uknwhylogvta4po6 
-       foreign key (customer_id) 
-       references customer
-Hibernate: 
-    alter table if exists invoice_line 
-       add constraint FKfnwks1ouvwbttl0fklxsem7ik 
-       foreign key (invoice_id) 
-       references invoice
-Hibernate: 
-    alter table if exists invoice_line 
-       add constraint FKaqmo5d61p64fh1d54imieqi8i 
-       foreign key (track_id) 
-       references track
-Hibernate: 
-    alter table if exists track 
-       add constraint FKaxm9pbgk7ptorfyk3o6911q05 
-       foreign key (album_id) 
-       references album
-Hibernate: 
-    alter table if exists users 
-       add constraint FKj1nvw1u6pgkabmhbcqkvatr8s 
-       foreign key (customer_id) 
-       references customer
-Hibernate: 
-    alter table if exists users 
-       add constraint FKfndbe67uw6silwqnlyudtwqmo 
-       foreign key (employee_id) 
-       references employee
-2026-02-17T12:03:35.193-08:00  INFO 88839 --- [revastudio] [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2026-02-17T12:03:35.251-08:00  INFO 88839 --- [revastudio] [    Test worker] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
-2026-02-17T12:03:35.672-08:00  WARN 88839 --- [revastudio] [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2026-02-17T12:03:35.720-08:00  WARN 88839 --- [revastudio] [    Test worker] .s.a.UserDetailsServiceAutoConfiguration : 
+2026-02-23T10:59:59.578-05:00  INFO 9243 --- [revastudio] [    Test worker] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-23T10:59:59.791-05:00  INFO 9243 --- [revastudio] [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-23T10:59:59.835-05:00  INFO 9243 --- [revastudio] [    Test worker] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-02-23T11:00:00.262-05:00  WARN 9243 --- [revastudio] [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-23T11:00:00.309-05:00  WARN 9243 --- [revastudio] [    Test worker] .s.a.UserDetailsServiceAutoConfiguration : 
 
-Using generated security password: 140f35ef-f8ac-4f56-979b-68596061eb46
+Using generated security password: 879b9ff3-2a47-4364-a673-36e99c9c08b3
 
 This generated password is for development use only. Your security configuration must be updated before running your application in production.
 
-2026-02-17T12:03:35.723-08:00  INFO 88839 --- [revastudio] [    Test worker] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
-2026-02-17T12:03:35.983-08:00  INFO 88839 --- [revastudio] [    Test worker] c.r.r.RevastudioApplicationTests         : Started RevastudioApplicationTests in 5.93 seconds (process running for 6.427)
+2026-02-23T11:00:00.313-05:00  INFO 9243 --- [revastudio] [    Test worker] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-02-23T11:00:00.567-05:00  INFO 9243 --- [revastudio] [    Test worker] c.r.r.RevastudioApplicationTests         : Started RevastudioApplicationTests in 3.343 seconds (process running for 3.986)
 ]]></system-out>
   <system-err><![CDATA[Mockito is currently self-attaching to enable the inline-mock-maker. This will no longer work in future releases of the JDK. Please add Mockito as an agent to your build as described in Mockito's documentation: https://javadoc.io/doc/org.mockito/mockito-core/latest/org.mockito/org/mockito/Mockito.html#0.3
 WARNING: A Java agent has been loaded dynamically (/Users/mike/.gradle/caches/modules-2/files-2.1/net.bytebuddy/byte-buddy-agent/1.17.8/f09415827a71be7ed621c7bd02550678f28bc81c/byte-buddy-agent-1.17.8.jar)
