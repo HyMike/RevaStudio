@@ -2,13 +2,8 @@ package com.revature.revastudio.controllers;
 
 import com.revature.revastudio.dto.TicketResponseDTO;
 import com.revature.revastudio.dto.TicketThreadDTO;
-import com.revature.revastudio.entity.TicketThread;
-import com.revature.revastudio.entity.User;
 import com.revature.revastudio.services.TicketService;
-import com.revature.revastudio.util.RetrieveCustomer;
 import com.revature.revastudio.util.RetrieveUser;
-import lombok.Getter;
-import org.apache.coyote.Response;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;

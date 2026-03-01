@@ -12,7 +12,7 @@ import lombok.NoArgsConstructor;
 public class TicketThreadDTO {
     public Integer ticketThreadId;
     public Integer ticketId;
-    public String thread; 
+    public String thread;
     public LocalDateTime createdAt;
 
 }

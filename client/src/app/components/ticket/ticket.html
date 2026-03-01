@@ -1,11 +1,26 @@
-<div> 
-    @if(allTickets | async; as tickets){
-        @for(ticket of tickets; track $index) {
-            <p>{{ ticket.subject }}</p>
-            
+<div class="ticket-page">
+  <h1 class="ticket-page-heading">My Tickets</h1>
+
+  @if (allTickets | async; as tickets) {
+    @if (tickets.length === 0) {
+      <p class="ticket-empty">No tickets yet.</p>
+    } @else {
+      <div class="ticket-list">
+        @for (ticket of tickets; track ticket.ticketId) {
+          <div class="ticket-card" (click) ="openThread(ticket.ticketId)">
+            <h2 class="ticket-card-subject">{{ ticket.subject }}</h2>
+            <div class="ticket-card-meta">
+              <span class="ticket-status" [class]="'ticket-status--' + ticket.status.toLowerCase()">
+                {{ ticket.status }}
+              </span>
+              <span class="ticket-date">{{ ticket.createdAt }}</span>
+            </div>
+            <span class="ticket-body">
+                {{ ticket.body }}
+            </span>
+          </div>
         }
-
-        
+      </div>
     }
-
+  }
 </div>

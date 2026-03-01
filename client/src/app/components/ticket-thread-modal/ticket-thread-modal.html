@@ -1,0 +1,22 @@
+<div class="modal">
+    <div class="modal-header">
+      <h2>Ticket thread</h2>
+      <button type="button" class="close-btn" (click)="onClose()">Close</button>
+    </div>
+    <div class="modal-body">
+      @if (ticketThreadMessages$ | async; as messages) {
+        @if (messages.length === 0) {
+          <p class="empty">No messages yet.</p>
+        } @else {
+          <ul class="thread-list">
+            @for (msg of messages; track msg.ticketThreadId) {
+              <li class="thread-item">
+                <p class="thread-text">{{ msg.thread }}</p>
+                <span class="thread-date">{{ msg.createdAt }}</span>
+              </li>
+            }
+          </ul>
+        }
+      }
+    </div>
+  </div>

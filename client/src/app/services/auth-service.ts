@@ -26,9 +26,8 @@ export class AuthService {
       }
     })     
     );
-
   }
-
+  
   logout():void {
     this.jwtStorage.clearToken();
   }

@@ -4,7 +4,6 @@ import com.revature.revastudio.dto.TicketResponseDTO;
 import com.revature.revastudio.dto.TicketThreadDTO;
 import com.revature.revastudio.entity.Ticket;
 import com.revature.revastudio.entity.TicketThread;
-import com.revature.revastudio.entity.User;
 import com.revature.revastudio.repositories.TicketRepository;
 import com.revature.revastudio.repositories.TicketThreadRepository;
 import org.springframework.stereotype.Service;
